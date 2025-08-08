@@ -10,7 +10,7 @@ const HomePage: React.FC = (): React.JSX.Element => {
 		setValue(newValue);
 	};
 
-	const TopBlock = (props: {date: string, title: string, subtitle: string, description?: string, icon: React.ReactNode}): React.JSX.Element => {
+	const TopBlock = (props: {date?: string, title?: string, subtitle?: string, description?: string, icon: React.ReactNode}): React.JSX.Element => {
 		return (
 			<Box sx={{ display: 'flex', gap: 4, mb: 4 }}>
 				<Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
@@ -97,7 +97,10 @@ const HomePage: React.FC = (): React.JSX.Element => {
 							<Typography variant="h6" sx={{ fontWeight: 'bold', textDecoration: 'underline' }} gutterBottom>
 								Roles and Responsibilities
 							</Typography>
-							<Accordion>
+							<Typography variant="body1" gutterBottom>
+								Work in progress. To be filled in later.
+							</Typography>
+							{/* <Accordion>
 								<AccordionSummary
 									expandIcon={<ArrowDropDown />}
 									aria-controls="panel1-content"
@@ -156,25 +159,25 @@ const HomePage: React.FC = (): React.JSX.Element => {
 										malesuada lacus ex, sit amet blandit leo lobortis eget.
 									</Typography>
 								</AccordionDetails>
-							</Accordion>
+							</Accordion> */}
 						</Container>
 					</TabPanel>
 					<TabPanel value="3">
 						<Container>
-							<SkillBlock
+							<TopBlock
 								title="Programming Languages"
-								description="HTML, CSS, JavaScript, TypeScript, PHP"
-								icon={<StarOutline fontSize="medium" />}
+								subtitle="HTML, CSS, JavaScript, TypeScript, PHP"
+								icon={<StarOutline fontSize="large" />}
 							/>
-							<SkillBlock
+							<TopBlock
 								title="Frameworks and Libraries"
-								description="React, Material UI, Tailwind CSS, Laravel"
-								icon={<StarOutline fontSize="medium" />}
+								subtitle="React, Material UI, Tailwind CSS, Laravel"
+								icon={<StarOutline fontSize="large" />}
 							/>
-							<SkillBlock
+							<TopBlock
 								title="Tools and Technologies"
-								description="Git, GitHub, GitKraken, Docker, MySQL, Monday, Accelo"
-								icon={<StarOutline fontSize="medium" />}
+								subtitle="Git, GitHub, GitKraken, Docker, MySQL, Monday, Accelo"
+								icon={<StarOutline fontSize="large" />}
 							/>
 						</Container>
 					</TabPanel>

@@ -41,18 +41,18 @@ const App: React.FC = () => {
 			<AppBar position="static">
 				<Toolbar>
 					<Typography variant="h6" component={Link} to="/" sx={{ flexGrow: 1, color: "inherit", textDecoration: "none", cursor: "pointer", fontWeight: "bold" }}>
-						My Homepage
+						A playground of sorts
 					</Typography>
 					<Box sx={{ flexGrow: 1 }}>
 						{/* <Button component={Link} to="/" color="inherit">
 							Home
 						</Button> */}
-						<Button component={Link} to="/about" color="inherit">
+						{/* <Button component={Link} to="/about" color="inherit">
 							About
 						</Button>
 						<Button component={Link} to="/contact" color="inherit">
 							Contact
-						</Button>
+						</Button> */}
 					</Box>
 					{/* Toggle Switch for Light/Dark Mode */}
 					<FormControlLabel
